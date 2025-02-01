@@ -42,9 +42,9 @@
       }
     </style>
   </head>
-  <body class="mx-auto ">
+  <body class="mx-auto">
     <header>
-      <nav class="sora bg-[#FFF9F4] px-3 lg:px-24">
+      <nav class="sora bg-[#FFF9F4] px-3 lg:px-24 relative z-1">
         <div class="navbar">
           <div class="navbar-start">
             <img src="./c1-assets/logo-header.png" alt="">
@@ -98,7 +98,7 @@
               Login
             </button>
             <button class="btn btn-warning text-black hidden lg:block mx-2 text-xl font-normal">Register</button>
-            <div class="dropdown lg:hidden">
+            <div class="dropdown  dropdown-left  lg:hidden">
               <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,21 +127,67 @@
           </div>
         </div>
       </nav>
-      <div class="banner px-3 lg:px-24"></div>
+      <div class="banner px-3 lg:px-24 mb-10 lg:my-13 h-120 lg:h-140">
+        <div class="title relative z-1">
+          <h1 class="adlam-display text-5xl lg:w-2/6 my-3 mr-5">Pamper Your Pet,<br>Because They Deserve the Best</h1>
+          <p class="sora lg:w-3/6 mb-2 lg:text-base text-l">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="btn btn-warning">Find a pet</button>
+        </div>
+        <div class="cat relative lg:bottom-110 bottom-30">
+          <img src="./c1-assets/cat-big.png" alt="">
+        </div>
+      </div>
     </header>
     <!-- category section -->
-    <section class="category px-3 lg:px-24">
-      <h3>Browse By Category</h3>
-      <div class="cards"></div>
+    <section class="category px-3 lg:px-24 adlam-display py-20">
+      <h3 class="text-3xl lg:4xl mb-5">Browse By categories</h3>
+       <div class="cards grid grid-cols-2 lg:grid-cols-6">
+        <div class="card bg-[#F9DF8A] p-8 m-2">
+          <img src="./c1-assets/dog-cartoon.png" alt="" class="bg-white rounded-full p-5 m-5">
+          <h4 class=" text-2xl lg:text-3xl text-center">Dog</h4>
+          <p class="sora text-base text-center">3 items</p>
+        </div>
+        <div class="card bg-[#F9DF8A] p-8 m-2">
+          <img src="./c1-assets/fish-cartoon.png" alt="" class="bg-white rounded-full p-5 m-5">
+          <h4 class="text-2xl lg:text-3xl  text-center">Fish</h4>
+          <p class="sora text-base text-center">3 items</p>
+        </div><div class="card bg-[#F9DF8A] p-8 m-2">
+          <img src="./c1-assets/cat-cartoon.png" alt="" class="bg-white rounded-full p-5 m-5">
+          <h4 class="text-2xl lg:text-3xl text-center">Cat</h4>
+          <p class="sora text-base text-center">3 items</p>
+        </div><div class="card bg-[#F9DF8A] p-8 m-2">
+          <img src="./c1-assets/bird-cartoon.png" alt="" class="bg-white rounded-full p-5 m-5">
+          <h4 class="text-2xl lg:text-3xl text-center">Birds</h4>
+          <p class="sora text-base text-center">3 items</p>
+        </div><div class="card bg-[#F9DF8A] p-8 m-2">
+          <img src="./c1-assets/mouse-cartoon.png" alt="" class="bg-white rounded-full p-5 m-5">
+          <h4 class="text-2xl lg:text-3xl text-center">Small pet</h4>
+          <p class="sora text-base text-center">3 items</p>
+        </div><div class="card bg-[#F9DF8A] p-8 m-2">
+          <img src="./c1-assets/rabbit-cartoon.png" alt="" class="bg-white rounded-full p-5 m-5">
+          <h4 class="text-2xl lg:text-3xl text-center">Rabbit</h4>
+          <p class="sora text-base text-center">2 items</p>
+        </div>
+       </div>
     </section>
     <!-- Product section -->
-    <section class="products px-3 lg:px-24">
-      <h3>Trending Pet Products</h3>
-      <div class="product-cards"></div>
+    <section class="products p-3 lg:px-24 bg-[#FFF9F4]">
+      <h3 class="text-4xl adlam-display mb-5">Trending Pet Products</h3>
+      <div class="product-cards grid grid-cols-6 grid-rows-3">
+        <div class="product-card col-span-6 row-span-1 lg:col-span-2 lg:row-span-3 bg-[#F9DF8A] p-10 rounded-box lg:m-10 h-100">
+          <h3 class="adlam-display text-2xl mb-3">T-shirt for dogs</h3>
+          <p class="sora text-base">Discover a world of treats,toys,and essentials handpicked for</p>
+          <button class="btn my-2 relative text-xl">Shop Now</button>
+            <img src="./c1-assets/cute-pet-small.png" alt="" class="relative bottom-35 left-23">
+        </div>
+        <div class="product-card bg-white p-2 ">
+
+        </div>
+      </div>
     </section>
     <!-- price section -->
     <section class="low-price px-3 lg:px-24">
-      <h3>Everyday low Price</h3>
+      <h3 class="text-4xl adlam-display mb-5">Everyday low Price</h3>
       <div class="price-cards"></div>
     </section>
     <!-- news section -->

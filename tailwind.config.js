@@ -1,4 +1,4 @@
-tailwind.config.js file.
+tailwind.config.js
 
 tailwind.config.js
 
